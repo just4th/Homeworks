@@ -47,6 +47,7 @@ const Variable = CreateExpression(
         return this.args[0];
     },
     function (...vars) {
+        // :NOTE: ??
         return +vars[variables.indexOf(this.args[0])];
     },
     function (x) {
